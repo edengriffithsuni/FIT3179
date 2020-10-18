@@ -22,7 +22,7 @@
     }
   ],
   "projection": {
-    "type": "equirectangular"
+    "type": "equalEarth"
   },
   "mark": {
     "type": "geoshape"
