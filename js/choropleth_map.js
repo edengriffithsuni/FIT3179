@@ -14,13 +14,13 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/data/covid_10_10_2020.csv"
+          "url": "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/data/Carbon%20by%20Energy.csv"
         },
         "key": "Country",
-        "fields": ["Active"]
+        "fields": ["g/kwh (2019)"]
       }
-    },
-    {"calculate": "datum.Active + 0.1", "as": "Active Cases"}
+    }//,
+    //{"calculate": "datum.Active + 0.1", "as": "Active Cases"}
   ],
   "projection": {
     "type": "equirectangular"
@@ -30,13 +30,12 @@
     },
   "encoding": {
     "color": {
-      "field": "Active Cases",
-      "type": "quantitative",
-      "scale": {"type": "log"}
+      "field": "g/kwh (2019)",
+      "type": "quantitative"
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-      {"field": "Active", "type": "quantitative"}
+      {"field": "g/kwh (2019)", "type": "quantitative"}
     ]
   }
 
