@@ -19,8 +19,7 @@
         "key": "Country",
         "fields": ["g/kwh (2019)"]
       }
-    },
-    {"calculate": "datum.g/kwh (2019) + 0.1", "as": "g/kwh (2019)"}
+    }
   ],
   "projection": {
     "type": "equirectangular"
@@ -31,8 +30,7 @@
   "encoding": {
     "color": {
       "field": "g/kwh (2019)",
-      "type": "quantitative",
-      "scale": {"type": "log"}
+      "type": "quantitative"
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
