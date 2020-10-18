@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "CO2 produced for energy",
+  "title": "COVID-19 Active Cases (10 Oct 2020)",
   "width": 800,
   "height": 600,
   "data": {
@@ -14,13 +14,13 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/data/Carbon%20by%20Energy.csv"
+          "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/data/covid_10_10_2020.csv"
         },
         "key": "Country",
-        "fields": ["g/kwh (2019)"]
+        "fields": ["Active"]
       }
-    }//,
-    //{"calculate": "datum.Active + 0.1", "as": "Active Cases"}
+    },
+    {"calculate": "datum.Active + 0.1", "as": "Active Cases"}
   ],
   "projection": {
     "type": "equirectangular"
@@ -30,12 +30,13 @@
     },
   "encoding": {
     "color": {
-      "field": "g/kwh (2019)",
-      "type": "quantitative"
+      "field": "Active Cases",
+      "type": "quantitative",
+      "scale": {"type": "log"}
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-      {"field": "g/kwh (2019)", "type": "quantitative"}
+      {"field": "Active", "type": "quantitative"}
     ]
   }
 
