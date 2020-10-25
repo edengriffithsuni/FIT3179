@@ -4,7 +4,7 @@
   "encoding": {
     "x": {
       "field": "Terawatt-hours",
-      "type": "qualitative",
+      "type": "nominal",
       "title": "Country"
     },
     "y": {
