@@ -1,0 +1,15 @@
+{
+  "data": {"url": "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/dataElectricity%20generation%20by%20fuel.csv"},
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Terawatt-hours",
+      "type": "qualitative",
+      "title": "Country"
+    },
+    "y": {
+      "field" : "Renewables",
+      "type": "quantitative"
+    }
+  }
+}
