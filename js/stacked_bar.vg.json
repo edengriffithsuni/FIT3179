@@ -1,5 +1,5 @@
 {
-  "data": {"url": "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/dataElectricity%20generation%20by%20fuel.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/data/Electricity%20generation%20by%20fuel.csv"},
   "mark": "bar",
   "encoding": {
     "x": {
@@ -8,7 +8,7 @@
       "title": "Country"
     },
     "y": {
-      "field" : "Renewables",
+      "field" : "Renew- ables",
       "type": "quantitative"
     }
   }
