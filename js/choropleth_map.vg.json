@@ -14,10 +14,10 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/data/Carbon%20by%20Energy.csv"
+          "url": "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/data/BP%20data%20with%20CO2%20per%20KWh.csv"
         },
         "key": "Country",
-        "fields": ["g/kwh (2019)"]
+        "fields": ["2019"]
       }
     }
   ],
@@ -30,12 +30,12 @@
     },
   "encoding": {
     "color": {
-      "field": "g/kwh (2019)",
+      "field": "2019",
       "type": "quantitative"
     },
     "tooltip": [
-      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-      {"field": "g/kwh (2019)", "type": "quantitative", "format":".2f"}
+      {"field": "properties.NAME_LONG", "type": "nominal", "title": "Country"},
+      {"field": "2019", "type": "quantitative", "format":".2f"}
     ]
   }
 
