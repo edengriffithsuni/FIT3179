@@ -6,7 +6,7 @@
   "params": [
   {
    "name": "Time_above",
-  "value": 0,
+  "value": 1966,
   "bind": {
   "input": "range",
   "min": 1966,
