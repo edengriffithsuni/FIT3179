@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Who's subsidising their fossil fuels the most?",
+  "width": 800,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+    "format": {
+          "type": "topojson",
+          "feature": "ne_110m_admin_0_countries"
+        }
+  },
+  "transform": [{
+      "lookup": "properties.NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/data/fossil_fuel_subsidies.csv"
+        },
+        "key": "Country",
+        "fields": ["Total"]
+      },
+      "as": ["Post-tax subsidies as % of GDP"]
+    }
+  ],
+  "projection": {
+    "type": "equalEarth"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white"
+    },
+  "encoding": {
+    "color": {
+      "field": "Post-tax subsidies as % of GDP",
+      "type": "quantitative",
+      "scale": {
+      "type": "threshold",
+      "domain": [0.5, 1.5, 3.5],
+      "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603"]
+ }
+    },
+    "tooltip": [
+      {"field": "properties.NAME_LONG", "type": "nominal", "title": "Country"},
+      {"field": "Post-tax subsidies as % of GDP", "type": "quantitative", "format":".2f"}
+    ]
+  }
+
+}
