@@ -62,11 +62,28 @@
         <p>How well is Australia transitioning to renewables?</p>
       </div>
       <div class="pure-button-group" role="group" aria-label="...">
-        <button class="pure-button">A Pure Button</button>
-        <button class="pure-button">A Pure Button</button>
-        <button class="pure-button pure-button-active">A Pure Button</button>
-</div>
+        <style scoped="">
+            .button-well,
+            .button-not_well {
+                color: white;
+                border-radius: 4px;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            }
+
+            .button-well {
+                background: rgb(28, 184, 65);
+                /* this is a green */
+            }
+
+            .button-not_well {
+                background: rgb(202, 60, 60);
+                /* this is a maroon */
+            }
+        </style>
+        <button class="button-well pure-button">Well</button>
+        <button class="button-not_well pure-button">Not Well</button>
     </div>
+   </div>
   <!-- end pure grid group -->
 
     <!-- pure grid group -->
