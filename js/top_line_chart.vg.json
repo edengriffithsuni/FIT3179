@@ -19,6 +19,6 @@
     "y": {"field": "CO2 per KWh", "type": "quantitative"},
     "color": {"condition": {"selection": "country_highlight", "field": "Country", "type": "nominal"}, "value": "gray"},
     "opacity": {
-        "condition": {"selection": "country_highlight", "value": 1}, "value": 0.3}
+        "condition": {"selection": "country_highlight", "value": 1}, "value": 0.2}
   }
  }
