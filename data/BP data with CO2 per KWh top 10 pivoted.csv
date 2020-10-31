@@ -1,0 +1,606 @@
+﻿Country,Pivot Field Names,Pivot Field Values
+South Africa,1965,319.6
+South Africa,1966,318.5
+South Africa,1967,314.8
+South Africa,1968,314.3
+South Africa,1969,313
+South Africa,1970,312.3
+South Africa,1971,313.2
+South Africa,1972,310.7
+South Africa,1973,310.5
+South Africa,1974,311.8
+South Africa,1975,311.8
+South Africa,1976,311.9
+South Africa,1977,312.8
+South Africa,1978,311.2
+South Africa,1979,314.3
+South Africa,1980,318.8
+South Africa,1981,319.7
+South Africa,1982,326.6
+South Africa,1983,330
+South Africa,1984,324.4
+South Africa,1985,325
+South Africa,1986,321.7
+South Africa,1987,324.3
+South Africa,1988,317.5
+South Africa,1989,314.2
+South Africa,1990,315.7
+South Africa,1991,312.6
+South Africa,1992,318.8
+South Africa,1993,321.6
+South Africa,1994,318.5
+South Africa,1995,314.4
+South Africa,1996,313.8
+South Africa,1997,313.6
+South Africa,1998,312.6
+South Africa,1999,312.9
+South Africa,2000,313.8
+South Africa,2001,316.3
+South Africa,2002,316.2
+South Africa,2003,318.2
+South Africa,2004,320.3
+South Africa,2005,324.7
+South Africa,2006,325.2
+South Africa,2007,324.2
+South Africa,2008,326.3
+South Africa,2009,326.6
+South Africa,2010,324.5
+South Africa,2011,322.9
+South Africa,2012,325.1
+South Africa,2013,324.2
+South Africa,2014,323.5
+South Africa,2015,322.3
+South Africa,2016,319.7
+South Africa,2017,319.3
+South Africa,2018,319.8
+South Africa,2019,319.2
+Estonia,1965,
+Estonia,1966,
+Estonia,1967,
+Estonia,1968,
+Estonia,1969,
+Estonia,1970,
+Estonia,1971,
+Estonia,1972,
+Estonia,1973,
+Estonia,1974,
+Estonia,1975,
+Estonia,1976,
+Estonia,1977,
+Estonia,1978,
+Estonia,1979,
+Estonia,1980,
+Estonia,1981,
+Estonia,1982,
+Estonia,1983,
+Estonia,1984,
+Estonia,1985,324.7
+Estonia,1986,326.4
+Estonia,1987,325.6
+Estonia,1988,322.8
+Estonia,1989,323.3
+Estonia,1990,318.1
+Estonia,1991,316.6
+Estonia,1992,332.6
+Estonia,1993,331.1
+Estonia,1994,324.9
+Estonia,1995,325.4
+Estonia,1996,324
+Estonia,1997,324.3
+Estonia,1998,320.6
+Estonia,1999,319.9
+Estonia,2000,319.4
+Estonia,2001,315.8
+Estonia,2002,317.3
+Estonia,2003,322.6
+Estonia,2004,317.3
+Estonia,2005,313.4
+Estonia,2006,310.9
+Estonia,2007,317.5
+Estonia,2008,316.4
+Estonia,2009,318.4
+Estonia,2010,321.2
+Estonia,2011,324.8
+Estonia,2012,315.4
+Estonia,2013,318.7
+Estonia,2014,321.9
+Estonia,2015,317.5
+Estonia,2016,317.1
+Estonia,2017,311
+Estonia,2018,320.7
+Estonia,2019,305.6
+Kazakhstan,1965,
+Kazakhstan,1966,
+Kazakhstan,1967,
+Kazakhstan,1968,
+Kazakhstan,1969,
+Kazakhstan,1970,
+Kazakhstan,1971,
+Kazakhstan,1972,
+Kazakhstan,1973,
+Kazakhstan,1974,
+Kazakhstan,1975,
+Kazakhstan,1976,
+Kazakhstan,1977,
+Kazakhstan,1978,
+Kazakhstan,1979,
+Kazakhstan,1980,
+Kazakhstan,1981,
+Kazakhstan,1982,
+Kazakhstan,1983,
+Kazakhstan,1984,
+Kazakhstan,1985,290.8
+Kazakhstan,1986,290.6
+Kazakhstan,1987,289.8
+Kazakhstan,1988,288.6
+Kazakhstan,1989,285.4
+Kazakhstan,1990,280.4
+Kazakhstan,1991,278
+Kazakhstan,1992,279.3
+Kazakhstan,1993,279.3
+Kazakhstan,1994,290
+Kazakhstan,1995,282.8
+Kazakhstan,1996,282.7
+Kazakhstan,1997,283.5
+Kazakhstan,1998,284.7
+Kazakhstan,1999,281.3
+Kazakhstan,2000,274.8
+Kazakhstan,2001,282.9
+Kazakhstan,2002,282
+Kazakhstan,2003,282.7
+Kazakhstan,2004,286.1
+Kazakhstan,2005,281.8
+Kazakhstan,2006,282.8
+Kazakhstan,2007,279.1
+Kazakhstan,2008,288.6
+Kazakhstan,2009,288.6
+Kazakhstan,2010,288
+Kazakhstan,2011,287.9
+Kazakhstan,2012,287.7
+Kazakhstan,2013,286
+Kazakhstan,2014,283.9
+Kazakhstan,2015,280.7
+Kazakhstan,2016,277.6
+Kazakhstan,2017,276.4
+Kazakhstan,2018,278.4
+Kazakhstan,2019,278.6
+North Macedonia,1965,
+North Macedonia,1966,
+North Macedonia,1967,
+North Macedonia,1968,
+North Macedonia,1969,
+North Macedonia,1970,
+North Macedonia,1971,
+North Macedonia,1972,
+North Macedonia,1973,
+North Macedonia,1974,
+North Macedonia,1975,
+North Macedonia,1976,
+North Macedonia,1977,
+North Macedonia,1978,
+North Macedonia,1979,
+North Macedonia,1980,
+North Macedonia,1981,
+North Macedonia,1982,
+North Macedonia,1983,
+North Macedonia,1984,
+North Macedonia,1985,
+North Macedonia,1986,
+North Macedonia,1987,
+North Macedonia,1988,
+North Macedonia,1989,
+North Macedonia,1990,296.3
+North Macedonia,1991,291.6
+North Macedonia,1992,290.7
+North Macedonia,1993,300
+North Macedonia,1994,298.7
+North Macedonia,1995,296.1
+North Macedonia,1996,291
+North Macedonia,1997,288.3
+North Macedonia,1998,294.3
+North Macedonia,1999,282.2
+North Macedonia,2000,285.1
+North Macedonia,2001,304.9
+North Macedonia,2002,293.5
+North Macedonia,2003,283.6
+North Macedonia,2004,278.6
+North Macedonia,2005,280.9
+North Macedonia,2006,276.5
+North Macedonia,2007,291.8
+North Macedonia,2008,296.4
+North Macedonia,2009,281.8
+North Macedonia,2010,254.7
+North Macedonia,2011,278.4
+North Macedonia,2012,286.4
+North Macedonia,2013,266.1
+North Macedonia,2014,271.1
+North Macedonia,2015,248.2
+North Macedonia,2016,233.6
+North Macedonia,2017,258.4
+North Macedonia,2018,243.1
+North Macedonia,2019,263.8
+India,1965,271.8
+India,1966,267.8
+India,1967,266.6
+India,1968,261
+India,1969,254.7
+India,1970,250.5
+India,1971,262.1
+India,1972,263.3
+India,1973,258.6
+India,1974,265.7
+India,1975,262.7
+India,1976,260.7
+India,1977,259.4
+India,1978,249
+India,1979,252.2
+India,1980,256.8
+India,1981,253.9
+India,1982,257.5
+India,1983,261.1
+India,1984,258.8
+India,1985,259.7
+India,1986,259.7
+India,1987,264.6
+India,1988,262
+India,1989,262
+India,1990,263
+India,1991,263
+India,1992,264.6
+India,1993,266.6
+India,1994,264.3
+India,1995,262.5
+India,1996,264.9
+India,1997,264
+India,1998,260.7
+India,1999,258.7
+India,2000,258.8
+India,2001,259.7
+India,2002,261.5
+India,2003,262.5
+India,2004,256.7
+India,2005,261.6
+India,2006,259.2
+India,2007,259.9
+India,2008,263.9
+India,2009,267
+India,2010,265.1
+India,2011,261.6
+India,2012,264.9
+India,2013,266.4
+India,2014,269.2
+India,2015,268.9
+India,2016,268.5
+India,2017,267.7
+India,2018,265.1
+India,2019,262.2
+Morocco,1965,203.6
+Morocco,1966,230.5
+Morocco,1967,235
+Morocco,1968,231.5
+Morocco,1969,225.7
+Morocco,1970,228.6
+Morocco,1971,226.5
+Morocco,1972,228.7
+Morocco,1973,240.2
+Morocco,1974,239.1
+Morocco,1975,245.7
+Morocco,1976,248
+Morocco,1977,243.3
+Morocco,1978,244.5
+Morocco,1979,245.1
+Morocco,1980,246.7
+Morocco,1981,252.6
+Morocco,1982,258.3
+Morocco,1983,261.3
+Morocco,1984,262.5
+Morocco,1985,263.3
+Morocco,1986,263.4
+Morocco,1987,262.4
+Morocco,1988,261.3
+Morocco,1989,260.2
+Morocco,1990,258.3
+Morocco,1991,257.8
+Morocco,1992,259
+Morocco,1993,265.7
+Morocco,1994,261.7
+Morocco,1995,265.3
+Morocco,1996,258.7
+Morocco,1997,255.7
+Morocco,1998,262.5
+Morocco,1999,266.2
+Morocco,2000,269.2
+Morocco,2001,271.2
+Morocco,2002,272.3
+Morocco,2003,266.6
+Morocco,2004,270.7
+Morocco,2005,272.8
+Morocco,2006,271.5
+Morocco,2007,269.2
+Morocco,2008,271
+Morocco,2009,258.3
+Morocco,2010,253.4
+Morocco,2011,259.8
+Morocco,2012,260.2
+Morocco,2013,255.5
+Morocco,2014,261.8
+Morocco,2015,258.5
+Morocco,2016,256.9
+Morocco,2017,258.4
+Morocco,2018,256.6
+Morocco,2019,258.9
+Poland,1965,326
+Poland,1966,325.2
+Poland,1967,323.7
+Poland,1968,321.4
+Poland,1969,319.5
+Poland,1970,316.7
+Poland,1971,315.9
+Poland,1972,315.9
+Poland,1973,313
+Poland,1974,311.4
+Poland,1975,311.6
+Poland,1976,311.7
+Poland,1977,311.5
+Poland,1978,310.9
+Poland,1979,310.8
+Poland,1980,311.6
+Poland,1981,311.1
+Poland,1982,312.2
+Poland,1983,311.6
+Poland,1984,312
+Poland,1985,312.2
+Poland,1986,311.4
+Poland,1987,312
+Poland,1988,311
+Poland,1989,310.8
+Poland,1990,308.7
+Poland,1991,311.2
+Poland,1992,311.9
+Poland,1993,311.3
+Poland,1994,308.7
+Poland,1995,308
+Poland,1996,305.1
+Poland,1997,304.2
+Poland,1998,299.8
+Poland,1999,299.2
+Poland,2000,294.7
+Poland,2001,294.9
+Poland,2002,294.7
+Poland,2003,293.6
+Poland,2004,290.2
+Poland,2005,289
+Poland,2006,287.5
+Poland,2007,285.5
+Poland,2008,282.5
+Poland,2009,280.1
+Poland,2010,278.7
+Poland,2011,277.5
+Poland,2012,272.2
+Poland,2013,273.4
+Poland,2014,268.4
+Poland,2015,265.6
+Poland,2016,265.4
+Poland,2017,263.2
+Poland,2018,262.4
+Poland,2019,255.8
+Indonesia,1965,239.2
+Indonesia,1966,234.2
+Indonesia,1967,226.7
+Indonesia,1968,223.3
+Indonesia,1969,214.7
+Indonesia,1970,213.2
+Indonesia,1971,231.5
+Indonesia,1972,235.6
+Indonesia,1973,244.4
+Indonesia,1974,241.1
+Indonesia,1975,230.9
+Indonesia,1976,236.7
+Indonesia,1977,217
+Indonesia,1978,214.5
+Indonesia,1979,217.4
+Indonesia,1980,224.5
+Indonesia,1981,229.5
+Indonesia,1982,231.3
+Indonesia,1983,222.7
+Indonesia,1984,217.9
+Indonesia,1985,208.8
+Indonesia,1986,207.5
+Indonesia,1987,213.8
+Indonesia,1988,213.4
+Indonesia,1989,210.5
+Indonesia,1990,221.9
+Indonesia,1991,220.5
+Indonesia,1992,220.4
+Indonesia,1993,222.3
+Indonesia,1994,222.6
+Indonesia,1995,223
+Indonesia,1996,220.9
+Indonesia,1997,228
+Indonesia,1998,230.1
+Indonesia,1999,227.8
+Indonesia,2000,227.5
+Indonesia,2001,232.4
+Indonesia,2002,230.9
+Indonesia,2003,240
+Indonesia,2004,235.9
+Indonesia,2005,236.8
+Indonesia,2006,246.1
+Indonesia,2007,247.6
+Indonesia,2008,243.8
+Indonesia,2009,242.8
+Indonesia,2010,243.8
+Indonesia,2011,250.5
+Indonesia,2012,254.1
+Indonesia,2013,253.4
+Indonesia,2014,246.8
+Indonesia,2015,252.4
+Indonesia,2016,247.6
+Indonesia,2017,250.5
+Indonesia,2018,254.2
+Indonesia,2019,255.4
+Cyprus,1965,259.4
+Cyprus,1966,252
+Cyprus,1967,253
+Cyprus,1968,253.8
+Cyprus,1969,253.3
+Cyprus,1970,255.3
+Cyprus,1971,251.6
+Cyprus,1972,255.4
+Cyprus,1973,253.4
+Cyprus,1974,234.6
+Cyprus,1975,244.3
+Cyprus,1976,244.6
+Cyprus,1977,255.5
+Cyprus,1978,261.1
+Cyprus,1979,260.7
+Cyprus,1980,261.3
+Cyprus,1981,258
+Cyprus,1982,260.3
+Cyprus,1983,259.4
+Cyprus,1984,256.1
+Cyprus,1985,263.4
+Cyprus,1986,261.5
+Cyprus,1987,265.5
+Cyprus,1988,261.6
+Cyprus,1989,259
+Cyprus,1990,257.9
+Cyprus,1991,263.4
+Cyprus,1992,264.9
+Cyprus,1993,265
+Cyprus,1994,265.8
+Cyprus,1995,267.2
+Cyprus,1996,267.4
+Cyprus,1997,265.9
+Cyprus,1998,263.2
+Cyprus,1999,262.8
+Cyprus,2000,263.6
+Cyprus,2001,264.3
+Cyprus,2002,263.2
+Cyprus,2003,264.7
+Cyprus,2004,265.1
+Cyprus,2005,266.2
+Cyprus,2006,265.7
+Cyprus,2007,266.5
+Cyprus,2008,264.5
+Cyprus,2009,262.4
+Cyprus,2010,259.8
+Cyprus,2011,258.5
+Cyprus,2012,257.9
+Cyprus,2013,257.2
+Cyprus,2014,259.6
+Cyprus,2015,257.7
+Cyprus,2016,256.4
+Cyprus,2017,255.7
+Cyprus,2018,254.3
+Cyprus,2019,252.9
+Botswana,1965,259.3
+Botswana,1966,288.4
+Botswana,1967,285.4
+Botswana,1968,286.9
+Botswana,1969,275.7
+Botswana,1970,263.5
+Botswana,1971,267.2
+Botswana,1972,260
+Botswana,1973,259.7
+Botswana,1974,254.3
+Botswana,1975,272.9
+Botswana,1976,287.1
+Botswana,1977,297.4
+Botswana,1978,171.8
+Botswana,1979,179.3
+Botswana,1980,181.6
+Botswana,1981,194.1
+Botswana,1982,198.4
+Botswana,1983,192.2
+Botswana,1984,190.9
+Botswana,1985,196.5
+Botswana,1986,207.3
+Botswana,1987,206.3
+Botswana,1988,214.1
+Botswana,1989,218.6
+Botswana,1990,248
+Botswana,1991,243.3
+Botswana,1992,250.8
+Botswana,1993,253
+Botswana,1994,263.6
+Botswana,1995,250.3
+Botswana,1996,252.7
+Botswana,1997,260.6
+Botswana,1998,255.8
+Botswana,1999,244.7
+Botswana,2000,243
+Botswana,2001,244
+Botswana,2002,240.5
+Botswana,2003,240.4
+Botswana,2004,243.4
+Botswana,2005,238.4
+Botswana,2006,239.2
+Botswana,2007,239.5
+Botswana,2008,241.7
+Botswana,2009,243.6
+Botswana,2010,234.2
+Botswana,2011,234.2
+Botswana,2012,240.4
+Botswana,2013,247.4
+Botswana,2014,250
+Botswana,2015,250.6
+Botswana,2016,253.7
+Botswana,2017,254.4
+Botswana,2018,256.2
+Botswana,2019,252.8
+Australia,1965,280.8
+Australia,1966,281.3
+Australia,1967,280.7
+Australia,1968,279.4
+Australia,1969,277.1
+Australia,1970,273.3
+Australia,1971,270.2
+Australia,1972,269.6
+Australia,1973,267.8
+Australia,1974,266.5
+Australia,1975,266.1
+Australia,1976,265.8
+Australia,1977,266
+Australia,1978,266.1
+Australia,1979,266.1
+Australia,1980,266.5
+Australia,1981,266.3
+Australia,1982,267.6
+Australia,1983,266.5
+Australia,1984,267
+Australia,1985,266.2
+Australia,1986,266.5
+Australia,1987,267.4
+Australia,1988,267.7
+Australia,1989,267.9
+Australia,1990,266.9
+Australia,1991,268.8
+Australia,1992,268.3
+Australia,1993,267
+Australia,1994,266.2
+Australia,1995,267.4
+Australia,1996,268.5
+Australia,1997,270.1
+Australia,1998,271.5
+Australia,1999,272.8
+Australia,2000,272.7
+Australia,2001,272
+Australia,2002,271.6
+Australia,2003,272.6
+Australia,2004,273.4
+Australia,2005,272.6
+Australia,2006,271.7
+Australia,2007,270.6
+Australia,2008,272.2
+Australia,2009,269.8
+Australia,2010,263.7
+Australia,2011,258.9
+Australia,2012,257.6
+Australia,2013,253.3
+Australia,2014,254
+Australia,2015,253.7
+Australia,2016,252
+Australia,2017,251.2
+Australia,2018,246.8
+Australia,2019,240.5
