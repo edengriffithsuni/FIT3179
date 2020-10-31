@@ -1,0 +1,24 @@
+  {
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 500,
+  "height": 400,
+  "title": "Are we getting better?",
+  "data": {
+    "url": "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/data/BP%20data%20with%20CO2%20per%20KWh%20top%2010%20pivoted.csv"
+    },
+  "selection": {
+  "country_highlight": {
+  "type": "multi",
+  "fields": ["Country"],
+  "bind": "legend"
+ }
+ },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal"},
+    "y": {"field": "CO2 per KWh", "type": "quantitative"},
+    "color": {"condition": {"selection": "country_highlight", "field": "Country", "type": "nominal"}, "value": "gray"},
+    "opacity": {
+        "condition": {"selection": "country_highlight", "value": 1}, "value": 0.3}
+  }
+ }
