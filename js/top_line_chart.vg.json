@@ -1,24 +1,58 @@
-  {
+{
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": "container",
   "height": 400,
-  "title": "Are we getting better?",
+  "title": "Australia vs Countries with the Dirtiest Electricity in 2019",
+  "config": {},
   "data": {
     "url": "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/data/BP%20data%20with%20CO2%20per%20KWh%20top%2010%20pivoted.csv"
     },
+ "layer" : [
+   {
   "selection": {
   "country_highlight": {
   "type": "multi",
   "fields": ["Country"],
   "bind": "legend"
- }
- },
-  "mark": "line",
+  }
+  },
+  "transform": [{"filter" : {"field": "Country", "oneOf": ["Australia", "South Africa", "Estonia", "Kazakhstan", "North Macedonia", "India"]}}],
+  "mark": {"type":"line", "interpolate":"monotone"},
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "title":null},
+    "y": {"field": "CO2 per KWh", "type": "quantitative", "title":"Grams of CO2 per KWh"},
+    "color": {
+      "field":"Country", 
+      "title":null, 
+      "scale":{
+      "range": ["#0D3B66", "#258EA6", "#F4D35E", "#EE964B", "#F95738", "#E56399"]}},
+    "opacity": {"condition": {"selection": "country_highlight", "value":0.7}, "value": 0.1},
+    "tooltip": [
+      {
+        "field": "Country",
+        "title": "Country"
+      },
+      {
+        "field": "Year",
+        "type" : "temporal",
+        "title": "Year",
+        "timeUnit": "year"
+      },
+      {
+        "field": "CO2 per KWh",
+        "title": "Grams of CO2 per KWh"
+      }
+    ]
+  }
+   },
+  {
+  "transform": [{"filter" : "datum.Country==='Australia'"}],
+  "mark": {"type":"line", "interpolate":"monotone"},
   "encoding": {
     "x": {"field": "Year", "type": "temporal"},
     "y": {"field": "CO2 per KWh", "type": "quantitative"},
-    "color": {"condition": {"selection": "country_highlight", "field": "Country", "type": "nominal"}, "value": "gray"},
-    "opacity": {
-        "condition": {"selection": "country_highlight", "value": 1}, "value": 0.2}
+    "color": {"condition": {"test": {"field": "Country", "oneOf":["Australia"]}, "value":"#0D3B66"} }
   }
+  }
+ ]
  }
