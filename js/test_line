@@ -1,0 +1,36 @@
+  {
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": "container",
+  "height": 400,
+  "title": "Are we getting better?",
+  "data": {
+    "url": "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/data/BP%20data%20with%20CO2%20per%20KWh%20pivoted.csv"
+    },
+ "layer": [
+   {
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal"},
+    "y": {"field": "Value", "type": "quantitative"},
+    "color": {"condition": {"test": {"field":"Country", "oneOf":["Australia"]}, "field":"Country", "type": "nominal"}, "value": "light_grey"},
+    "opacity": {"condition": {"test": {"field":"Country", "oneOf":["Australia"]}, "value" : 1}, "value" : 0.1}
+  }
+   },
+
+   {
+  "selection": {
+    "pts": 
+      {"type": "single", 
+      "fields":["Country"], 
+      "bind": {"input": "select", "options":["null", "Australia", "France", "US"]}
+      }
+      },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal"},
+    "y": {"field": "Value", "type": "quantitative"},
+    "color": {"condition": {"selection": "pts", "field":"Country", "type": "nominal"}, "value": "light_grey"}
+  }
+   }
+  ]
+ }
