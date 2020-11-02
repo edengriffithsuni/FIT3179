@@ -1,0 +1,154 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+"width": "container",
+"height": 400,
+"title": "Renewables v Fossil Fuel Energy per Capita",
+"data": {
+    "url": "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/data/Fossil%20fuels%20vs%20renewable%20energy%20usage.csv"
+ },
+"params": [
+  {
+  "name": "Continent_selection",
+    "bind": {
+    "input": "select",
+    "options": [
+      null,
+      "North America",
+      "South America",
+      "Europe",
+      "Africa",
+      "Asia",
+      "Oceania"
+    ],
+    "labels":[
+      "Show All",
+      "North America",
+      "South America",
+      "Europe",
+      "Africa",
+      "Asia",
+      "Oceania"
+    ],
+  "name": "Continent Selection: "
+      }
+  },
+  {
+  "name": "Population_Above",
+  "value": 0,
+  "bind": {
+    "input": "range",
+    "min": 0,
+    "max": 100000000,
+    "step": 1000000,
+    "name": "Minimum Population: "
+    }
+  }  
+],
+"transform": [
+  {"filter": "Continent_selection == null || datum.Continent == Continent_selection"},
+  {"filter": "datum.Population > Population_Above"}
+],
+"encoding": {
+  "x": {
+    "field": "Renewables/capita",
+    "type": "quantitative",
+    "title": "Energy from renewables (KWh per Capita)"
+  },
+  "y": {
+    "field": "Fossil fuels/capita",
+    "type": "quantitative",
+    "title" : "Energy from fossil fuels (KWh per Capita)"
+  }
+},
+"layer" : [
+  {"selection": {
+  "continent_highlight": {
+      "type": "multi",
+      "fields": ["Continent"],
+      "bind": "legend"
+    }
+  },
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "field": "Renewables/capita",
+      "type": "quantitative",
+      "title": "Energy from renewables (KWh per Capita)"
+    },
+    "y": {
+      "field": "Fossil fuels/capita",
+      "type": "quantitative",
+      "title" : "Energy from fossil fuels (KWh per Capita)"
+    },
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "scale": {
+      "domain": [
+        "Oceania",
+        "North America",
+        "South America",
+        "Europe",
+        "Africa",
+        "Asia"
+      ],
+      "range": [
+        "#0D3B66", "#258EA6", "#F4D35E", "#EE964B", "#F95738", "#E56399"
+      ]
+      }
+    },
+    "opacity": {
+      "condition": {"selection": "continent_highlight", "value": 0.6},
+      "value": 0.2
+    },
+    "size": {
+    "field": "GDP/capita",
+    "type": "quantitative",
+    "title": "GDP per Capita",
+    "scale": {
+      "type": "threshold",
+      "domain": [5000, 15000, 30000, 40000, 50000],
+      "range": [10, 50, 150, 200, 400, 600]
+    },
+    "legend": {"format": ".1s"}
+    },
+    "tooltip": [
+      {"field": "Country", "type": "nominal"},
+      {"field": "Population", "type": "quantitative", "format": ",.0f"},
+      {"field": "GDP/capita", "type": "quantitative", "format": ",.0f"},
+      {"field": "Fossil fuels/capita", "type": "quantitative", "title": "Fossil fuels (KWh / capita)", "format": ",.0f"},
+      {"field": "Renewables/capita", "type": "quantitative", "title": "Renewables (KWh / capita)", "format": ",.0f"}
+    ]
+  }
+},
+{
+ "mark": {
+  "type": "text",
+  "align": "right",
+  "baseline": "top",
+  "dx": -5,
+  "dy": 8,
+  "fontSize": 11.5,
+  "fontStyle": "italic"
+  },
+ "encoding": {
+  "text": {"field": "Country", "type": "nominal"},
+  "color": {"value": "black"},
+  "opacity": {
+  "condition": {
+    "test": "datum['Country'] == 'China' || datum['Country'] == 'Australia'  || datum['Country'] == 'United States' || datum['Country'] == 'Netherlands'",
+    "value": 1
+    },
+    "value": 0
+  },
+ "tooltip": [
+      {"field": "Country", "type": "nominal"},
+      {"field": "Population", "type": "quantitative", "format": ",.0f"},
+      {"field": "GDP/capita", "type": "quantitative", "format": ",.0f"},
+      {"field": "Fossil fuels/capita", "type": "quantitative", "title": "Fossil fuels (KWh / capita)", "format": ",.0f"},
+      {"field": "Renewables/capita", "type": "quantitative", "title": "Renewables (KWh / capita)", "format": ",.0f"}
+    ]
+ }
+ }
+]
+}
