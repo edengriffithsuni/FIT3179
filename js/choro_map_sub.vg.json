@@ -45,7 +45,7 @@
       "scale": {
         "type": "threshold",
         "domain": [null, 0.5, 1.5, 3.5, 5.5],
-        "range": ["lightgrey", "#ffffb2","#fecc5c","#fd8d3c", "#f03b20", "#e31a1c"]
+        "range": ["lightgrey","#fed976","#feb24c","#fd8d3c","#f03b20","#bd0026"]
        }
       },
       "fillOpacity": {"value": 0.8},
