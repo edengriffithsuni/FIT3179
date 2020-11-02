@@ -41,7 +41,7 @@
     "color": {
       "field": "Post-tax subsidies as % of GDP",
       "type": "quantitative",
-      "legend": {"orient": "bottom", "direction": "horizontal", "padding": 45},
+      "legend": {"orient": "bottom", "direction": "horizontal", "padding": 0},
       "scale": {
         "type": "threshold",
         "domain": [null, 0.5, 1.5, 3.5, 5.5],
