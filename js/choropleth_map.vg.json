@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "How polluting is our energy?",
   "width": "container",
-  "height": "400",
+  "height": "600",
   "data": {
     "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
     "format": {
@@ -39,7 +39,7 @@
       "color": {
         "field": "2019",
         "type": "quantitative",
-        "legend": {"orient": "bottom", "direction": "horizontal"},
+        "legend": {"orient": "bottom", "direction": "horizontal", "title": "Grams of CO2 per KWh"},
         "scale": {
           "type": "threshold",
           "domain": [null, 165, 195, 225, 250],
@@ -49,7 +49,7 @@
       "fillOpacity": {"value": 0.8},
       "tooltip": [
         {"field": "properties.NAME_LONG", "type": "nominal", "title": "Country"},
-        {"field": "2019", "type": "quantitative", "format":".2f"}
+        {"field": "2019", "type": "quantitative", "format":".2f", "title": "Grams of CO2 per KWh"}
       ]
     }
     }
