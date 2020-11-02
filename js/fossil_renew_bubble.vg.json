@@ -95,7 +95,8 @@
       "range": [
         "#0D3B66", "#258EA6", "#F4D35E", "#EE964B", "#F95738", "#E56399"
       ]
-      }
+      },
+      "legend": {"orient": "bottom", "direction": "horizontal"}
     },
     "opacity": {
       "condition": {"selection": "continent_highlight", "value": 0.6},
