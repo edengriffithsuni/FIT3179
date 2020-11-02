@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": "container",
-  "height": 400,
-  "title": "Australia vs Countries with the Dirtiest Electricity in 2019",
+  "height": 250,
+  "title": "Australia vs Countries with the Dirtiest Electricity as of 2019",
   "config": {},
   "data": {
     "url": "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/data/BP%20data%20with%20CO2%20per%20KWh%20top%2010%20pivoted.csv"
@@ -23,9 +23,10 @@
     "y": {"field": "CO2 per KWh", "type": "quantitative", "title":"Grams of CO2 per KWh"},
     "color": {
       "field":"Country", 
-      "title":null, 
-      "scale":{
-      "range": ["#0D3B66", "#258EA6", "#F4D35E", "#EE964B", "#F95738", "#E56399"]}},
+      "title":null,
+      "scale": {
+        "domain" : ["Australia", "South Africa", "Estonia", "Kazakhstan", "North Macedonia", "India"],
+        "range": ["#0D3B66", "#258EA6", "#F4D35E", "#EE964B", "#F95738", "#E56399"]}},
     "opacity": {"condition": {"selection": "country_highlight", "value":0.7}, "value": 0.1},
     "tooltip": [
       {
@@ -53,6 +54,47 @@
     "y": {"field": "CO2 per KWh", "type": "quantitative"},
     "color": {"condition": {"test": {"field": "Country", "oneOf":["Australia"]}, "value":"#0D3B66"} }
   }
-  }
- ]
+  }, {
+      "data": {
+         "values": [{"Country" : "Australia", "Year" : "2019", "CO2 per KWh" : 240.5}]
+      },
+      "encoding": {
+        "y": {"datum": 240}
+      },
+      "layer": [
+        {"mark": "rule",
+        "encoding": {"opacity": { "value" : 0 }}
+        }, 
+        {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "baseline": "bottom",
+          "dx": 20,
+          "dy": 17,
+          "x": "width",
+          "text": "Australia - 2019"
+        },
+        "encoding": {"color" : {"value": "#0D3B66"},
+        "tooltip": [
+      {
+        "field": "Country",
+        "title": "Country"
+      },
+      {
+        "field": "Year",
+        "type" : "temporal",
+        "title": "Year",
+        "timeUnit": "year"
+      },
+      {
+        "field": "CO2 per KWh",
+        "title": "Grams of CO2 per KWh"
+      }
+    ]}
+        
+      }]
+    }
+    
+  ]
  }
