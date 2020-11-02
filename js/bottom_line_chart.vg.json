@@ -72,8 +72,8 @@
           "type": "text",
           "align": "right",
           "baseline": "bottom",
-          "dx": 17,
-          "dy": 10,
+          "dx": 0,
+          "dy": 13,
           "x": "width",
           "text": "Australia - 2019"
         },
