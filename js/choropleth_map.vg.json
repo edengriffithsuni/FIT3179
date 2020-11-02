@@ -31,7 +31,8 @@
   "encoding": {
     "color": {
       "field": "2019",
-      "type": "quantitative"
+      "type": "quantitative",
+      "legend": {"orient": "bottom", "direction": "horizontal"}
     },
     "tooltip": [
       {"field": "properties.NAME_LONG", "type": "nominal", "title": "Country"},
