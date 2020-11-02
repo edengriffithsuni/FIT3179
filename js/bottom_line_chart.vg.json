@@ -26,7 +26,9 @@
       "title":null,
       "scale": {
         "domain" : ["Australia", "Iceland", "Norway", "Sweden", "Trinidad & Tobago", "France"],
-        "range": ["#0D3B66", "#258EA6", "#F4D35E", "#EE964B", "#F95738", "#E56399"]}},
+        "range": ["#0D3B66", "#258EA6", "#F4D35E", "#EE964B", "#F95738", "#E56399"]},
+        "legend": {"orient": "bottom", "direction": "horizontal"}
+    },
     "opacity": {"condition": {"selection": "country_highlight", "value":0.7}, "value": 0.1},
     "tooltip": [
       {
