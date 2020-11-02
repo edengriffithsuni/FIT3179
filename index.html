@@ -22,7 +22,7 @@
       font-weight: 900;
     }
      body{
-       background-color: lightgray;
+       background-color: white;
      }
      .page{
        width: 850px;    
@@ -49,6 +49,79 @@
     .small-font{
         font-size: 14px;
     }
+      
+    $red: #881d12;
+
+
+    @mixin bump {
+        0%      {transform: scale(1); }
+        50%     {transform: scale(1.5); }
+        100%    {transform: scale(1); }
+    }
+
+    @keyframes bump1 { @include bump; }
+    @keyframes bump2 {@include bump;}
+
+    body {padding:50px; background:#ededed;}
+
+    .vote-count {
+      width:40px;
+      height:35px;
+      text-align:center;
+      color:$red;
+      font:20px/1.5 georgia;
+      margin-bottom:10px;
+      animation: bump .3s; 
+      &.bumped {
+        animation: bump2 .3s; 
+      }
+    }
+
+    .vote-btn {
+      appearance:none;
+      border-radius:3px;
+      border:0;
+      background:#fff;
+      padding:15px 12px 15px 40px;
+      font:bold 9px/1.2 arial;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      color:$red;
+      box-shadow:0 1px 1px rgba(0,0,0,.2);
+      outline:none;
+      position:relative;
+      transition: all .3s ease-out; 
+      cursor:pointer;
+      overflow:hidden;
+
+      .icon {
+            position:absolute;
+        content: "";
+        left:10px;
+        top:10px;
+        width:20px;
+        height:20px;
+        border-radius:10px;
+        display:inline-block;
+        background:$red url(https://jamesmuspratt.com/codepen/img/checkmark.svg) no-repeat 2px 1px;
+        background-size:16px auto;
+      transition: all .3s ease-out; 
+
+      }
+
+    }
+
+
+    .vote-btn.complete {
+      padding-left:15px;
+      background:#c1c0bb;
+      color: #fff;
+      .icon {
+        opacity:0;
+        /* transform: rotateX(90deg); */
+          transform: scale(0); 
+     }
+    }
   </style>
 </head>
 <body>
@@ -61,6 +134,16 @@
         <h1>The Shift to Renewables</h1>
         <p>How well is Australia transitioning to renewables?</p>
       </div>
+        
+    <form class="myform">
+      <p class="vote-count">3</p>
+      <button
+              class="vote-btn" 
+              data-default-text="Vote This Dish Up!"
+              data-alt-text="Thanks for Voting">
+        <span class="icon"></span> <span class="text">Vote This Dish Up!</span>
+      </button>
+    </form>
       <div class="pure-button-group" role="group" aria-label="...">
         <style scoped="">
             .button-well,
@@ -111,6 +194,9 @@
         <div class="pure-u-1-1">
           <div id="vis2" class="vis-container"></div>
         </div>
+        <div class="pure-u-1-1">
+          <div id="vis6" class="vis-container"></div>
+        </div>
     </div>
     <!-- end pure grid group -->
 
@@ -119,10 +205,7 @@
       <div class="pure-u-1-1">
         <h2>Why is this happening?!</h2>       
       </div>
-      <div class="pure-u-1-2">
-        <div id="vis4"  class="vis-container"></div>
-      </div>
-      <div class="pure-u-1-2">
+      <div class="pure-u-1-1">
         <div id="vis3"  class="vis-container"></div>
       </div>
     
@@ -139,11 +222,12 @@
   </div> <!-- end page -->
    
 <script type="text/javascript">
-  var specVis1 = "js/choropleth_map.vg.json";
-  var specVis2= "js/line_chart.vg.json";
-  var specVis3= "js/choro_map_sub.vg.json";
-  var specVis4= "js/bottom_line_chart.vg.json";
-  var specVis5= "js/top_line_chart.vg.json";
+  var specVis1 = "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/js/choropleth_map.vg.json";
+  var specVis2= "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/js/fossil_renew_bubble.vg.json";
+  var specVis3= "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/js/choro_map_sub.vg.json";
+  var specVis4= "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/js/bottom_line_chart.vg.json";
+  var specVis5= "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/js/top_line_chart.vg.json";
+  var specVis6= "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/js/dist_curve.vg.json";
 
   vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -164,6 +248,54 @@
   vegaEmbed('#vis5', specVis5, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+            
+  vegaEmbed('#vis6', specVis6, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+            
+    var VoteWidget= {
+    settings: {
+      $counter: $('.vote-count'),
+      $btn:     $('.myform button'),
+      },
+    init: function() {
+      VoteWidget.bind();
+    },
+      bind: function() {
+        VoteWidget.settings.$btn.click(function(){
+          if (! $(this).hasClass('complete')) {
+                VoteWidget.bumpCount();
+          }
+          $(this).toggleClass('complete');
+          VoteWidget.toggleText();  
+
+        return false;
+      });
+      },
+      bumpCount: function() {
+        var current_count = $('.vote-count').text();
+        count = parseInt(current_count);
+        count++;
+        VoteWidget.settings.$counter.toggleClass('bumped').text(count);
+      },
+      toggleText: function(){
+        var $text_container = $('.myform button .text');
+        var alt_text = VoteWidget.settings.$btn.data('alt-text');
+        var default_text = VoteWidget.settings.$btn.data('default-text');
+        var current_text = $text_container.text();
+        console.log('current is ' + current_text);
+        if ( current_text == default_text ) {
+          $text_container.text(alt_text)
+        } else {
+          $text_container.text(default_text)
+        }
+      }
+    }
+
+
+    VoteWidget.init();
+
+
 </script>
 </body>
 </html>
