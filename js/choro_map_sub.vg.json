@@ -2,7 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Who's subsidising their fossil fuels the most?",
   "width": "container",
-  "height": 300,
+  "height": 600,
+  "config": {"view": {"stroke": "transparent"}},
   "data": {
     "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
     "format": {
@@ -40,7 +41,7 @@
     "color": {
       "field": "Post-tax subsidies as % of GDP",
       "type": "quantitative",
-      "legend": {"orient": "bottom", "direction": "horizontal"},
+      "legend": {"orient": "bottom", "direction": "horizontal", "padding": 45},
       "scale": {
         "type": "threshold",
         "domain": [null, 0.5, 1.5, 3.5, 5.5],
