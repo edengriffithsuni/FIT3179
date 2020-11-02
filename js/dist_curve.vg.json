@@ -1,0 +1,118 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Distribution of countries' CO2 per KWh",
+  "width": "container",
+  "height": 80,
+  "data": {
+    "url": "https://raw.githubusercontent.com/edengriffithsuni/FIT3179/main/data/BP%20data%20with%20CO2%20per%20KWh%20(2019%20for%20distribution%20curve).csv"
+  },
+  "layer" : [
+  {
+  "mark": "area",
+  "transform": [
+    {
+      "density": "2019",
+      "extent": [0, 400]
+    }
+  ],
+  "encoding": {
+    "x": {"field": "value", "type": "quantitative", "title": "CO2 (g) per KWh"},
+    "y": {"field": "density", "type": "quantitative", "stack": "zero", "title" : "Density"},
+    "color": {"value": "#EE964B"}
+  }
+  },
+  
+  {
+    "mark": "rule",
+    "encoding": {
+      "x": {"aggregate": "mean", "field": "2019"},
+      "color": {"value": "translucent"},
+      "size": {"value": 2},
+      "tooltip": [
+          { 
+            "field" : "2019",
+            "aggregate": "mean",
+            "title": "Grams of CO2 per KWh",
+            "format": ".1f"
+          }
+
+        ]
+    }
+  },
+  {
+    "mark" : 
+    {
+      "type": "text",
+      "text": "Mean",
+      "align": "right",
+      "baseline": "bottom",
+      "dx": 35,
+      "dy": -27,
+      "x": "width"
+    },
+    "encoding": {
+      "x": {"aggregate": "mean", "field": "2019"},
+      "tooltip": [
+          { 
+            "field" : "2019",
+            "aggregate": "mean",
+            "title": "Grams of CO2 per KWh",
+            "format": ".1f"
+          }
+
+        ]
+    }
+    
+  },
+    {
+    "data": {
+      "values": [{"Country" : "Australia", "2019" : 240.5}]
+      },
+      "encoding": {
+        "x": {"aggregate" : "mean", "field": "2019"}
+      },
+      "layer": [
+        {"mark": "rule",
+        "encoding": {
+          "color": { "value" : "#0D3B66" },
+          "size": {"value": 2},
+          "tooltip": [
+          {
+            "field": "Country"
+          },
+          {
+            "field": "2019",
+            "title": "Grams of CO2 per KWh"
+          }
+        ]
+          }
+        },
+        {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "baseline": "bottom",
+          "dx": 55,
+          "dy": -27,
+          "x": "width",
+          "text": "Australia"
+        },
+        "encoding": {
+          "color" : {"value": "#0D3B66"},
+        "tooltip": [
+          {
+            "field": "Country"
+          },
+          {
+            "field": "2019",
+            "title": "Grams of CO2 per KWh"
+          }
+
+        ]
+        }
+        }
+      ]
+        }
+  ]
+  
+}
