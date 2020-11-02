@@ -40,7 +40,7 @@
       "color": {
         "field": "2019",
         "type": "quantitative",
-        "legend": {"orient": "bottom", "direction": "horizontal", "title": "Grams of CO2 per KWh", "padding": 20},
+        "legend": {"orient": "bottom", "direction": "horizontal", "title": "Grams of CO2 per KWh", "padding": 40},
         "scale": {
           "type": "threshold",
           "domain": [null, 165, 195, 225, 250],
